@@ -1,0 +1,53 @@
+  <configuration  xmlns:xi="http://www.w3.org/2001/XInclude">
+    
+    <property>
+      <name>hive.exec.scratchdir</name>
+      <value>hdfs://mycluster/tmp/hive</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.client.connect.retry.delay</name>
+      <value>5</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.client.socket.timeout</name>
+      <value>1800</value>
+    </property>
+    
+    <property>
+      <name>hive.metastore.uris</name>
+      <value>thrift://hn0-huawei.0csra2ly1cje5oyzwma4mz3czh.ix.internal.cloudapp.net:9083,thrift://hn1-huawei.0csra2ly1cje5oyzwma4mz3czh.ix.internal.cloudapp.net:9083</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.enable.doAs</name>
+      <value>false</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.thrift.http.path</name>
+      <value>/</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.thrift.http.port</name>
+      <value>10002</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.thrift.port</name>
+      <value>10016</value>
+    </property>
+    
+    <property>
+      <name>hive.server2.transport.mode</name>
+      <value>http</value>
+    </property>
+    
+    <property>
+      <name>metastore.catalog.default</name>
+      <value>spark</value>
+    </property>
+    
+  </configuration>
